@@ -1,0 +1,9 @@
+Ideas for future implementation:
+
+- Factories could have dependencies injected as well if needed. I did not need it so far, but I do not see any reason to not do it
+- Constructon Injection can be implemented somehow, I did not bother. OnInject is enough for most of the cases
+- Named dependencies could be important, never needed them
+- The Reflection system could be improved through caching...not sure if is needed
+- A scene can have already several context, but currenty they cannot be hierarchical
+- The framework does not support a xml base config file, which can be done too if needed.
+
