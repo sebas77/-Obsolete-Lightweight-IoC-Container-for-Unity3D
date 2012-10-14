@@ -414,7 +414,6 @@
 /ProjectSettings/AudioManager.asset
 /ProjectSettings/DynamicsManager.asset
 /ProjectSettings/EditorBuildSettings.asset
-/ProjectSettings/EditorSettings.asset
 /ProjectSettings/InputManager.asset
 /ProjectSettings/NavMeshLayers.asset
 /ProjectSettings/NetworkManager.asset
@@ -450,3 +449,128 @@
 /Assets/Materials/waterrunning.mat
 /Assets/MiniGun/miniGun-01.FBX
 /Assets/Objects/mainLevelFBX.fbx
+/Assets/Shaders/Alpha-VertexColor-1.shader
+/Assets/Shaders/Alpha-VertexColor.shader
+/Assets/Shaders/LightmapOnlyShader.shader
+/Assets/Shaders/iphone-lightmap-alphatest.shader
+/Assets/Shaders/vertexColor.shader
+/Assets/Shaders/vertexUnlit.shader
+/Library/cache/02/02defc6de0136c04c861f5880acacae2
+/Library/cache/4b/4bf8421ec94d78c4cad3eb41b85d58d5
+/Library/cache/81/8191b3ffb35355d4eaced71f08ff3e38
+/Library/cache/8b/8bd4178d81ce9bd459e9dddc4ba863dd
+/Library/cache/8c/8cc9663f24893b44496d3a8d2374b8ef
+/Library/cache/c8/c89316c0aa7cca5438156ef7ef9ccbe8
+/Library/cache/d4/d40bc157ca1e68b45a377cab4a2936f2
+/Library/cache/e8/e88834c3243e18a4eaf16dacb6a3caaf
+/Library/metadata/02/02defc6de0136c04c861f5880acacae2
+/Library/metadata/4b/4bf8421ec94d78c4cad3eb41b85d58d5
+/Library/metadata/59/59c2b379abb56fd40b554cefa8d8f8bf
+/Library/metadata/68/68bdf6bcdf0632e47be834d2874e0885
+/Library/metadata/81/8191b3ffb35355d4eaced71f08ff3e38
+/Library/metadata/8b/8bd4178d81ce9bd459e9dddc4ba863dd
+/Library/metadata/8c/8cc9663f24893b44496d3a8d2374b8ef
+/Library/metadata/a4/a442c07fca2f5db409da6eda1127fef0
+/Library/metadata/c8/c89316c0aa7cca5438156ef7ef9ccbe8
+/Library/metadata/d4/d40bc157ca1e68b45a377cab4a2936f2
+/Library/metadata/e3/e3695fed86c6b5c428362c731b200e92
+/Library/metadata/e8/e88834c3243e18a4eaf16dacb6a3caaf
+/Library/metadata/e9/e931f7b6a4150f44fa7f4cfb87f25a97
+/Library/metadata/ff/ff0263f90b0e6304a81a1e13a4e9587b
+/Library/previews/02/02defc6de0136c04c861f5880acacae2
+/Library/previews/4b/4bf8421ec94d78c4cad3eb41b85d58d5
+/Library/previews/59/59c2b379abb56fd40b554cefa8d8f8bf
+/Library/previews/68/68bdf6bcdf0632e47be834d2874e0885
+/Library/previews/81/8191b3ffb35355d4eaced71f08ff3e38
+/Library/previews/a4/a442c07fca2f5db409da6eda1127fef0
+/Library/previews/c8/c89316c0aa7cca5438156ef7ef9ccbe8
+/Library/previews/d4/d40bc157ca1e68b45a377cab4a2936f2
+/Library/previews/e3/e3695fed86c6b5c428362c731b200e92
+/Library/previews/e8/e88834c3243e18a4eaf16dacb6a3caaf
+/Library/previews/e9/e931f7b6a4150f44fa7f4cfb87f25a97
+/Library/previews/ff/ff0263f90b0e6304a81a1e13a4e9587b
+/Lightweight-IoC-Container-for-Unity3D-csharp.sln
+/Lightweight-IoC-Container-for-Unity3D.sln
+/Lightweight-IoC-Container-for-Unity3D.userprefs
+/Assets/Textures.meta
+/Assets/Textures/grass1TGA.jpg.meta
+/Assets/Textures/rock1TGA.jpg.meta
+/Assets/Textures/structureDepository.jpg.meta
+/Assets/Textures/structureDoors.jpg.meta
+/Assets/Textures/structureMainTGA.jpg.meta
+/Assets/Textures/walkwayTGA.tga.meta
+/Assets/Textures/waterPipeTGA.tga.meta
+/Assets/Shaders.meta
+/Assets/Shaders/Alpha-VertexColor-1.shader.meta
+/Assets/Shaders/Alpha-VertexColor.shader.meta
+/Assets/Shaders/LightmapOnlyShader.shader.meta
+/Assets/Shaders/iphone-lightmap-alphatest.shader.meta
+/Assets/Shaders/vertexColor.shader.meta
+/Assets/Shaders/vertexUnlit.shader.meta
+/Assets/Materials.meta
+/Assets/Materials/cableonetga.mat.meta
+/Assets/Materials/flowerpatchonetga.mat.meta
+/Assets/Materials/grass1tga.mat.meta
+/Assets/Materials/leavestga.mat.meta
+/Assets/Materials/rock1tga.mat.meta
+/Assets/Materials/sewagetga.mat.meta
+/Assets/Materials/skybox.mat.meta
+/Assets/Materials/structuredepository.mat.meta
+/Assets/Materials/structuredoors.mat.meta
+/Assets/Materials/structuremaintga.mat.meta
+/Assets/Materials/treebarktga.mat.meta
+/Assets/Materials/walkwaytga.mat.meta
+/Assets/Materials/waterpipetga.mat.meta
+/Assets/Materials/waterrunning.mat.meta
+/Assets/MiniGun.meta
+/Assets/MiniGun/Materials.meta
+/Assets/MiniGun/Materials/miniGun-01-Material #25.mat
+/Assets/MiniGun/Materials/miniGun-01-Material #25.mat.meta
+/Assets/MiniGun/Materials/miniGun-01-Material #26.mat
+/Assets/MiniGun/Materials/miniGun-01-Material #26.mat.meta
+/Assets/MiniGun/Materials/miniGun-01-Material #27.mat
+/Assets/MiniGun/Materials/miniGun-01-Material #27.mat.meta
+/Assets/MiniGun/Materials/miniGun-01-Material #28.mat
+/Assets/MiniGun/Materials/miniGun-01-Material #28.mat.meta
+/Assets/MiniGun/Materials/miniGun-01-Material #29.mat
+/Assets/MiniGun/Materials/miniGun-01-Material #29.mat.meta
+/Assets/MiniGun/Materials/miniGun-01-Material #30.mat
+/Assets/MiniGun/Materials/miniGun-01-Material #30.mat.meta
+/Assets/MiniGun/miniGun-01.FBX.meta
+/Assets/MiniGun/miniGun-01.fbm.meta
+/Assets/MiniGun/miniGun-01.fbm/Gun cover.jpg
+/Assets/MiniGun/miniGun-01.fbm/Gun cover.jpg.meta
+/Assets/MiniGun/miniGun-01.fbm/Gun cylinder.jpg
+/Assets/MiniGun/miniGun-01.fbm/Gun cylinder.jpg.meta
+/Assets/MiniGun/miniGun-01.fbm/cylinder top of the gun.jpg
+/Assets/MiniGun/miniGun-01.fbm/cylinder top of the gun.jpg.meta
+/Assets/MiniGun/miniGun-01.fbm/gun back cover.jpg
+/Assets/MiniGun/miniGun-01.fbm/gun back cover.jpg.meta
+/Assets/MiniGun/miniGun-01.fbm/gun inside Covre.jpg
+/Assets/MiniGun/miniGun-01.fbm/gun inside Covre.jpg.meta
+/Assets/MiniGun/miniGun-01.fbm/metal texture black.jpg
+/Assets/MiniGun/miniGun-01.fbm/metal texture black.jpg.meta
+/Assets/Objects.meta
+/Assets/Objects/mainLevelFBX.fbx.meta
+/Assets/Plugins.meta
+/Assets/Plugins/HOTween.meta
+/Assets/Plugins/HOTween/Editor.meta
+/Assets/Plugins/HOTween/Editor/HOTweenV1_Editor.dll.mdb.meta
+/Assets/Plugins/HOTween/Editor/HOTweenV1_Editor.dll.meta
+/Assets/Plugins/HOTween/HOTween.XML.meta
+/Assets/Plugins/HOTween/HOTween.dll.meta
+/Assets/Plugins/HOTween/HOTween.pdb.meta
+/Assets/Plugins/HOTween/HOTween_License.txt.meta
+/Assets/Plugins/NUnitLite.meta
+/Assets/Plugins/NUnitLite/NUnitLite.CHANGES.txt.meta
+/Assets/Plugins/NUnitLite/NUnitLite.LICENSE.txt.meta
+/Assets/Plugins/NUnitLite/NUnitLite.README.txt.meta
+/Assets/Plugins/NUnitLite/NUnitLite.XML.meta
+/Assets/Plugins/NUnitLite/NUnitLite.dll.meta
+/Assets/Plugins/NUnitLite/NUnitLiteUnityRunner.README.txt.meta
+/Assets/Plugins/NUnitLite/NUnitLiteUnityRunner.cs.meta
+/Assets/Prefabs.meta
+/Assets/Prefabs/MonsterPath.prefab.meta
+/Assets/Prefabs/Weapon.prefab.meta
+/Assets/Resources.meta
+/Assets/Resources/Monster.prefab.meta
