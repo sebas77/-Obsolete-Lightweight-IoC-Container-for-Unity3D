@@ -8,6 +8,10 @@ http://blog.sebaslab.com/ioc-container-for-unity3d-part-1/
 
 http://blog.sebaslab.com/ioc-container-for-unity3d-part-2/
 
+After have downloaded the source code, please download the asset following this link:
+
+https://github.com/downloads/sebas77/Lightweight-IoC-Container-for-Unity3D/ioccontainerexampleasset.unitypackage
+
  Copyright 2012 Sebastiano Mandalà
 
    Licensed under the Apache License, Version 2.0 (the "License");
