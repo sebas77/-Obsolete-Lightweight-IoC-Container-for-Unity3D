@@ -32,7 +32,7 @@ namespace IoC
 		
 		virtual public void AsSingle<T>(T istance) where T:class, Contractor
 		{
-			_container.Map(type, istance);
+			_container.Map(type, typeof(T), istance);
 		}
 		
 		private 	IInternalContainer  _container;

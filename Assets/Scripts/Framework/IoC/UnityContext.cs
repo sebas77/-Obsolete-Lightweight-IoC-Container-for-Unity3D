@@ -6,9 +6,14 @@ public class ContextMessage
 	static public readonly string ADDED = "OnAdded";
 }
 
-public class UnityContext<T>: MonoBehaviour where T:IContextRoot, new()
+public class UnityContext:MonoBehaviour
 {
-	void Awake()
+
+}
+
+public class UnityContext<T>: UnityContext where T:IContextRoot, new()
+{
+	virtual protected void Awake()
 	{
 		Debug.Log("UnityContext Awaked");
 		
@@ -29,6 +34,8 @@ public class UnityContext<T>: MonoBehaviour where T:IContextRoot, new()
 				
 		_applicationRoot.container.Inject(component);
 	}
+	
+	protected IoC.IContainer container { get { return _applicationRoot.container;} } 
 	
 	private T 				_applicationRoot;
 }

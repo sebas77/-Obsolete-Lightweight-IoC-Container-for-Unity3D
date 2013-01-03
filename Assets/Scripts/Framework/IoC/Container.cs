@@ -10,7 +10,7 @@ namespace IoC
 		public Container()
 		{
 			_providers = new Dictionary<Type, IProvider>();
-			_uniqueInstances = new Dictionary<IProvider, object>();
+			_uniqueInstances = new Dictionary<Type, object>();
 			_injectLater = new HashSet<object>();
 		}
 		
@@ -43,14 +43,10 @@ namespace IoC
 			Type type = typeof(TContractor);
 				
 			if (_providers.ContainsKey(type))
-			{
-				IProvider provider = _providers[type];
-				
-				if (_uniqueInstances.ContainsKey(provider))
-					_uniqueInstances.Remove(provider);
-				
 				_providers.Remove(type);
-			}
+			
+			if (_uniqueInstances.ContainsKey(type))
+				_uniqueInstances.Remove(type);
 		}
 		
 		//
@@ -76,16 +72,16 @@ namespace IoC
 			_providers[type] = new StandardProvider(type);
 		}
 		
-		virtual public void Map(System.Type type, object instance)
+		virtual public void Map(System.Type type, System.Type mapper, object instance)
 		{
-			DesignByContract.Check.Require(instance != null);
-			DesignByContract.Check.Require(type.IsAssignableFrom(instance.GetType()), "Trying to register an invalid instance");
+			DesignByContract.Check.Require(instance != null, "IoC: Trying to register an null instance of type: " + type.FullName);
+			DesignByContract.Check.Require(type.IsAssignableFrom(instance.GetType()), "IoC: Trying to register an invalid instance of type: " + type.FullName);
 			
 			_injectLater.Add(instance);
 			
-			_providers[type] = new StandardProvider(type);
-						
-			_uniqueInstances[_providers[type]] = instance;
+			_providers[type] = new StandardProvider(mapper);
+			
+			_uniqueInstances[mapper] = instance;
 		}
 		
 		public void Inject<TContractor>(TContractor instance)
@@ -139,28 +135,29 @@ namespace IoC
 		virtual protected object Get(Type contract) 
 		{	
 			if (_providers.ContainsKey(contract) == true)
-			{	//take the provider linked to the contract
-				//N.B. several contracts could be linked
-				//to the provider of the same class
+			{	
 				IProvider provider = _providers[contract];
-				//the contract is actually the provider type
-				if (_uniqueInstances.ContainsKey(provider) == false)
+				
+				if (_uniqueInstances.ContainsKey(provider.contract) == false)
 					return CreateDependency(provider);
 				else
-				{
-					object instance = _uniqueInstances[provider];
-				
-					if (_injectLater.Contains(instance))
-					{
-						InternalInject(instance);
-						
-						_injectLater.Remove(instance);
-					}
-						
-					return instance;
-				}
+					return _uniqueInstances[provider.contract]; 	
 			}
-			
+			else
+			if (_uniqueInstances.ContainsKey(contract) == true)
+			{
+				object instance = _uniqueInstances[contract];
+				
+				if (_injectLater.Contains(instance))
+				{
+					InternalInject(instance);
+					
+					_injectLater.Remove(instance);
+				}
+					
+				return instance;
+			}
+						
 			return null;
 		}
 		
@@ -173,7 +170,7 @@ namespace IoC
 		{
 			object obj = provider.Create();
 	
-			_uniqueInstances[provider] = obj; //seriously, this must be done before obj is injected to avoid circular dependencies
+			_uniqueInstances[provider.contract] = obj; //seriously, this must be done before obj is injected to avoid circular dependencies
 			
 			InternalInject(obj);
 			
@@ -181,7 +178,7 @@ namespace IoC
 		}
 		
 		private readonly Dictionary<Type, 	IProvider> 		_providers;
-		private readonly Dictionary<IProvider, object> 		_uniqueInstances;
+		private readonly Dictionary<Type, object> 			_uniqueInstances;
 		
 		private readonly HashSet<object>					_injectLater;
 	}

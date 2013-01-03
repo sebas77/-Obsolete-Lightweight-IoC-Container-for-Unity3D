@@ -19,11 +19,11 @@ namespace IoC
 	/// </summary>
 	public interface IInternalContainer
 	{
-		void Register(System.Type mapping);
-		void Register(System.Type mapping, System.Type mapper);
-		void Register(System.Type mapping, IProvider provider);
+		void Register(System.Type type);
+		void Register(System.Type type, System.Type mapper);
+		void Register(System.Type type, IProvider provider);
 		
-		void Map(System.Type mapping, object istance);
+		void Map(System.Type type, System.Type mapper, object istance);
 	}
 }
 

@@ -19,7 +19,7 @@ namespace IoC
 			if (typeof(MonoBehaviour).IsAssignableFrom(mapper) == false)
 				base.Register(type, mapper);
 			else
-				throw new Exception("Monobehaviour can be registered only through instance");
+				throw new Exception("Monobehaviour can be registered only through instance: " + type.FullName);
 		}
 		
 		override public void Register(System.Type type)
@@ -27,13 +27,13 @@ namespace IoC
 			if (typeof(MonoBehaviour).IsAssignableFrom(type) == false)
 				base.Register(type);
 			else
-				throw new Exception("Monobehaviour can be registered only through instance");
+				throw new Exception("Monobehaviour can be registered only through instance: " + type.FullName);
 		}
 		
-		override public void Map(System.Type type, object instance)
+		override public void Map(System.Type type, System.Type mapper, object instance)
 		{
 			if ((instance is MonoBehaviour) == false)
-				base.Map(type, instance);
+				base.Map(type, mapper, instance);
 			else
 			{
 				DesignByContract.Check.Require(instance != null);

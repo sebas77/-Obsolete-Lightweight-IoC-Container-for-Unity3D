@@ -7,5 +7,3 @@ public static class MonoInjection
 		script.SendMessageUpwards(ContextMessage.ADDED, script, SendMessageOptions.DontRequireReceiver);
 	}
 }
-
-

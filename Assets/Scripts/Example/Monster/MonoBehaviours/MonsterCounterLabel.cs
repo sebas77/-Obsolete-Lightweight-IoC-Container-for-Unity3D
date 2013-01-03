@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MonsterCounterLabel : MonoBehaviour 
 {
-	[IoC.Inject] public IMonsterSystem monsterSystem { private get; set; }
+	[IoC.Inject] public MonsterSystem monsterSystem { private get; set; }
 	
 	void Start()
 	{
