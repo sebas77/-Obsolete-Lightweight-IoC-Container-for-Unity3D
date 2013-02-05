@@ -21,6 +21,17 @@ namespace Command
 			
 			return command;
 		}
+
+		public TCommand Build<TCommand>(params object[] args) where TCommand:ICommand, new()
+		{
+			Type commandClass = typeof(TCommand);
+			
+			TCommand command = (TCommand)Activator.CreateInstance(commandClass, args);
+			
+			container.Inject(command);
+			
+			return command;
+		}
 		
 		public TCommand Build<TCommand>(Func<ICommand> constructor) where TCommand:ICommand
 		{
