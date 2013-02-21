@@ -39,10 +39,11 @@ public class Main:IContextRoot
 	}
 }
 
-//UnityContext must be executed before than
-//anything else use the container itself.
-//Exploit the Awake/Start or the Script
-//Execution Order to achieve it.
+//UnityContext must be executed before 
+//anything else that uses the container itself.
+//In order to achieve this, you can use
+//the execution order or the awake/start 
+//functions order
 
 public class GameContext: UnityContext<Main>
 {
