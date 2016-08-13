@@ -4,13 +4,6 @@ Lightweight IoC Container for Unity3D
 **Note: This project must now be considered obsolete and just a reference for my original articles listed below.
 New project can be found at this address: https://github.com/sebas77/Svelto**
 
-Lightweight IoC container c# implementation compatible with Unity3D.
-More info at:
-
-http://blog.sebaslab.com/ioc-container-for-unity3d-part-1/
-
-http://blog.sebaslab.com/ioc-container-for-unity3d-part-2/
-
 After have downloaded the source code, please download the asset following this link:
 
 https://github.com/downloads/sebas77/Lightweight-IoC-Container-for-Unity3D/ioccontainerexampleasset.unitypackage
