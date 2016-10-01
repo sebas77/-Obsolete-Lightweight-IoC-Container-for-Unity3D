@@ -1,4 +1,4 @@
-Lightweight IoC Container for Unity3D
+[OBSOLETE & DEPRECATED] Lightweight IoC Container for Unity3D
 =====================================
 
 **Note: This project must now be considered obsolete and just a reference for my original articles listed below.
